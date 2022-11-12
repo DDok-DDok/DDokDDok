@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Sans:wght@300;400;700&display=swap');
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+    /* .mainImg {transform: scale(2.0);} */
+    .mainImg {transition: .5s;}
+
+  .slidecontainer {
+    height: 25px; /* Specified height */
+    position: absolute;
+    right: 2.5%;
+    z-index: 900;
+      /* border: solid red 1px; */
+    width: 300px; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider2 {
+    border-width:1.5px 0 0 0; 
+    border: color #242424;    
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 1px; /* Specified height */
+    background: #242424; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider2:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider2::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%;
+    background: black; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider2::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  /* -------------------------------------------------------------------------------------------------------------------------- */
+
+* {
+  font-family: 'Noto Sans','Noto Sans KR' sans-serif;
+  line-height: 1.7;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@media screen { body { background-color: rgba(250, 250, 250, 1); } }
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  overflow: hidden;
+  cursor: url(../img/about_bell.png) auto;
+}
+
+.nav_set { /* 네비게이션 */
+  position: fixed;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(250, 250, 250, 1);
+  z-index: 100 !important;
+  
+}
+
+
+.nav{
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+  position: relative;
+  float: left;
+  padding-left: 2.5%;
+}
+
+.nav a {
+  float: left; 
+  
+}
+
+.logo_icon{
+  width: 2.5%;
+}
+.logo_icon img{
+  width: 100%;
+}
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* 네비 메뉴 탭 */
+.menu_tab{
+  width: 45%;
+  position: relative;
+  margin: 0 auto;
+  z-index: 100;
+}
+/*
+.menu_tab a{
+  color: #242424;
+  border:1px solid #242424; 
+  outline: none;
+  text-align:center;
+  padding: 2px 20px;
+  border-radius: 40px;
+  text-decoration: none;
+}
+*/
+.menu_tab a:hover{
+  color: #ffffff;
+  border:1px solid #242424; 
+  background-color: #6969ff;
+  outline: none;
+  text-align:center;
+  padding: 2px 25px;
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+.manu_tab_home{
+  color: #ffffff;
+  border:1px solid #242424; 
+  background-color: #6969ff;
+  outline: none;
+  text-align:center;
+  padding: 2px 25px;
+  border-radius: 40px;
+  text-decoration: none;
+}
+.menu_tab_character{
+  margin-left: 4%;
+  color: #242424;
+  border:1px solid #242424; 
+  outline: none;
+  text-align:center;
+  padding: 2px 25px;
+  border-radius: 40px;
+  text-decoration: none;
+}
+.menu_tab_project{
+  margin-left: 4%;
+  color: #242424;
+  border:1px solid #242424; 
+  outline: none;
+  text-align:center;
+  padding: 2px 25px;
+  border-radius: 40px;
+  text-decoration: none;
+}
+.menu_tab_about{
+  margin-left: 4%;
+  color: #242424;
+  border:1px solid #242424; 
+  outline: none;
+  text-align:center;
+  padding: 2px 25px;
+  border-radius: 40px;
+  text-decoration: none;
+}
+/* 네비 메뉴 탭 */
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+.section{
+  width: 100%;
+  margin-top: 100px;
+}
+
+
+
+
+.main_logo_text{
+  width: 95%;
+  position: absolute;
+  margin-left: 3vw;
+  margin-top: 5vh;
+}
+
+
+
+.main_ddok img{
+  margin: 0 auto;
+  width: 40%;
+  top: 5vh;
+  left: 30vw;
+  position: absolute;
+}
+
+.main_ddok :hover{
+  cursor: pointer;
+}
+
+.SNS_link{
+  font-size: 20px;
+  position: relative;
+  margin-top: 75vh;
+  margin-left: 2.5%;
+}
+
+
+.figma{
+  color: #242424;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.instagram{
+  color: #242424;
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.youtube{
+  color: #242424;
+  text-decoration: none;
+  margin-left: -1px;
+}
+
+
+
+
+.scroll_btn{
+  position: absolute;
+  top: 37vh;
+  right: 2.5%;
+}
+
+.scroll_btn img{
+  width: 100%;
+}
+
+
+.door{
+  width: 80vw;
+  position: relative;
+  left: 8vw;
+}
+
+
+

@@ -1,0 +1,131 @@
+* {
+    font-family: 'Noto Sans','Noto Sans KR' sans-serif;
+    line-height: 1.7;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1920px) { body { background-color: rgba(250, 250, 250, 1); } }
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    max-width: 1920px;
+    overflow-x: hidden;
+    cursor: url(../img/cursor_basic.svg) auto;
+}
+
+.nav_set { /* 네비게이션 */
+    position: fixed;
+    margin-left: -10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #FAFAFA;
+    z-index: 2;
+    top: 0;
+}
+
+
+.nav{
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+    position: relative;
+    float: left;
+    padding-left: 2.5%;
+}
+
+.nav a {
+    float: left; 
+    
+}
+
+.logo_icon{
+  width: 2.5%;
+}
+.logo_icon img{
+  width: 100%;
+}
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* 네비 메뉴 탭 */
+
+
+.menu_tab{
+  width: 37%;
+  margin: 0 auto;
+}
+/*
+.menu_tab a{
+  color: #242424;
+  border:1px solid #242424; 
+  outline: none; 
+  text-align:center;
+  padding: 2px 20px;
+  border-radius: 40px;
+  text-decoration: none;
+}
+*/
+.menu_tab a:hover{
+  color: #ffffff;
+  border:1px solid #242424; 
+  background-color: #6969ff;
+  outline: none;
+  text-align:center;
+  padding: 2px 25px;
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+.manu_tab_home, .menu_tab_project{
+    color: #242424;
+    border:1px solid #242424; 
+    outline: none;
+    text-align:center;
+    padding: 2px 25px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+.menu_tab_character{
+    margin-left: 4%;
+    color: #ffffff;
+    border:1px solid #242424; 
+    background-color: #6969ff;
+    outline: none;
+    text-align:center;
+    padding: 2px 25px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+.menu_tab_project{
+    margin-left: 4%;
+    color: #242424;
+    border:1px solid #242424; 
+    outline: none;
+    text-align:center;
+    padding: 2px 25px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+.menu_tab_about{
+    margin-left: 4%;
+    color: #242424;
+    border:1px solid #242424; 
+    outline: none;
+    text-align:center;
+    padding: 2px 25px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+/* 네비 메뉴 탭 */
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+
+.middle{
+    width: 100%;
+    margin-top: 50px;
+}
