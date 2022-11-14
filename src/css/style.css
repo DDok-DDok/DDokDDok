@@ -259,6 +259,10 @@ body {
   top: 0;
 }
 
+.door_click :hover{
+  cursor: pointer;
+}
+
 .door_click video{
   width: 80vw;
   position: absolute;
