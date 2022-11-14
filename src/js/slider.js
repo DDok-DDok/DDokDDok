@@ -1,20 +1,4 @@
-// var slider = document.getElementById("myRange");
-
-// console.log(slider);
-
-// var output = document.getElementById("demo");
-// console.log(output);
-
-// output.innerHTML = slider.value; // Display the default slider value
-
-// // Update the current slider value (each time you drag the slider handle)
-// slider.oninput = function() {
-//   output.innerHTML = this.value;
-// }
-
-// $('myRange').value
-
-// console.log($('#myRange'))
+//메인 캐릭터 사이즈 변경
 console.log($('#myRange').val())
 
 $('#myRange').on('click', function(){
@@ -68,10 +52,11 @@ if (60 < $('#myRange').val() && $('#myRange').val() <= 70){
     })
 }
 console.log($('#myRange').val())
-})
+});
 
 
-
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+//캐릭터 이미지 변경
 $(document).ready(function(){
     /*웹페이지 열었을 때*/
     $("#img1").show();
@@ -98,4 +83,108 @@ $(document).ready(function(){
         $("#img2").hide();
         $("#img3").hide();
     });
+});
+
+
+$(document).ready(function(){
+    /*웹페이지 열었을 때*/
+    $("#door_waver_1").show();
+    $("#door_open_ddok").hide();
+    $("#door_close_1").hide();
+    $("#door_open_popo").hide();
+    $("#door_close_2").hide();
+    $("#door_open_bubu").hide();
+    $("#door_close_3").hide();
+
+    /*door_waver_1 클릭했을 때 door_open_ddok를 보여줌*/
+    $("#door_waver_1").dblclick(function(){
+        $("#door_waver_1").hide();
+        $("#door_open_ddok").show();
+        $("#door_close_1").hide();
+        $("#door_open_popo").hide();
+        $("#door_close_2").hide();
+        $("#door_open_bubu").hide();
+        $("#door_close_3").hide();
+    });
+
+    /*door_open_ddok 클릭했을 때 door_close_1을 보여줌*/
+    $("#door_open_ddok").dblclick(function(){
+        $("#door_waver_1").hide();
+        $("#door_open_ddok").hide();
+        $("#door_close_1").show();
+        $("#door_open_popo").hide();
+        $("#door_close_2").hide();
+        $("#door_open_bubu").hide();
+        $("#door_close_3").hide();
+    });
+
+    /*door_close_1 클릭했을 때 door_open_popo을 보여줌*/
+    $("#door_close_1").dblclick(function(){
+        $("#door_waver_1").hide();
+        $("#door_open_ddok").hide();
+        $("#door_close_1").hide();
+        $("#door_open_popo").show();
+        $("#door_close_2").hide();
+        $("#door_open_bubu").hide();
+        $("#door_close_3").hide();
+    });
+
+
+    /*door_open_popo 클릭했을 때 door_close_2을 보여줌*/
+    $("#door_open_popo").dblclick(function(){
+        $("#door_waver_1").hide();
+        $("#door_open_ddok").hide();
+        $("#door_close_1").hide();
+        $("#door_open_popo").hide();
+        $("#door_close_2").show();
+        $("#door_open_bubu").hide();
+        $("#door_close_3").hide();
+    });
+
+    /*door_close_2 클릭했을 때 door_open_bubu을 보여줌*/
+    $("#door_close_2").dblclick(function(){
+        $("#door_waver_1").hide();
+        $("#door_open_ddok").hide();
+        $("#door_close_1").hide();
+        $("#door_open_popo").hide();
+        $("#door_close_2").hide();
+        $("#door_open_bubu").show();
+        $("#door_close_3").hide();
+    });
+
+    /*door_open_bubu 클릭했을 때 door_close_3을 보여줌*/
+    $("#door_open_bubu").dblclick(function(){
+        $("#door_waver_1").hide();
+        $("#door_open_ddok").hide();
+        $("#door_close_1").hide();
+        $("#door_open_popo").hide();
+        $("#door_close_2").hide();
+        $("#door_open_bubu").hide();
+        $("#door_close_3").show();
+    });
+
+    /*door_close_3 클릭했을 때 door_waver_1을 보여줌*/
+    $("#door_close_3").dblclick(function(){
+        $("#door_waver_1").show();
+        $("#door_open_ddok").hide();
+        $("#door_close_1").hide();
+        $("#door_open_popo").hide();
+        $("#door_close_2").hide();
+        $("#door_open_bubu").hide();
+        $("#door_close_3").hide();
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

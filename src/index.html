@@ -80,9 +80,19 @@
         <!-- 섹션1 문 똑똑 두드리기 -->
         <div class="section s1" id="section s1">
 
-            <div id="WebGL-output">
-                
+            <!-- 문 똑똑 -->
+            <div class="door_click">
+                <video id="door_waver_1" autoplay loop muted src="./img/door_waver.mp4"></video>
+                <video id="door_open_ddok" autoplay loop muted src="./img/door_open_ddok.mp4"></video>
+                <video id="door_close_1" autoplay loop muted src="./img/door_close_1.mp4"></video>
+                <video id="door_open_popo" autoplay loop muted src="./img/door_open_popo.mp4"></video>
+                <video id="door_close_2" autoplay loop muted src="./img/door_close_2.mp4"></video>
+                <video id="door_open_bubu" autoplay loop muted src="./img/door_open_bubu.mp4"></video>
+                <video id="door_close_3" autoplay loop muted src="./img/door_close_3.mp4"></video>
             </div>
+
+
+            <canvas id="three-canvas"></canvas>
             <!-- <video class="door" autoplay loop muted src="./img/home_c4d_1.mp4"></video> -->
 
             <div class="scroll_btn">
@@ -148,6 +158,18 @@
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
         });
     </script>
+
+    <script>
+
+        function init(){
+
+        };
+        window.onload = init;
+    </script>
+
+
+
+
 
     <!-- <script type="module">
 

@@ -252,11 +252,18 @@ body {
 }
 
 
-.door{
-  width: 80vw;
-  position: relative;
-  left: 8vw;
+.door_click{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
 }
 
-
+.door_click video{
+  width: 80vw;
+  position: absolute;
+  top: -5vh;
+  left: 10vw;
+  margin: 0 auto;
+}
 
