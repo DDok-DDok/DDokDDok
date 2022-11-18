@@ -174,6 +174,7 @@ $(document).ready(function(){
         $("#door_close_3").hide();
     });
 
+    let mov = document. getElementById(door_waver_1)
 
 
 
@@ -184,6 +185,92 @@ $(document).ready(function(){
 
 
 
+
+
+
+
+});
+
+$(document).ready(function(){
+    /*웹페이지 열었을 때*/
+    $("#video0").show();
+    $("#video1").hide();
+    $("#video2").hide();
+    $("#video3").hide();
+    $("#video4").hide();
+    $("#video5").hide();
+    $("#video6").hide();
+
+    /*door_waver_1 클릭했을 때 door_open_ddok를 보여줌*/
+    $("#video0").dblclick(function(){
+        $("#video0").hide();
+        $("#video1").show();
+        $("#video2").hide();
+        $("#video3").hide();
+        $("#video4").hide();
+        $("#video5").hide();
+        $("#video6").hide();
+    });
+
+    $("#video1").dblclick(function(){
+        $("#video0").hide();
+        $("#video1").hide();
+        $("#video2").show();
+        $("#video3").hide();
+        $("#video4").hide();
+        $("#video5").hide();
+        $("#video6").hide();
+    });
+
+    $("#video2").dblclick(function(){
+        $("#video0").hide();
+        $("#video1").hide();
+        $("#video2").hide();
+        $("#video3").show();
+        $("#video4").hide();
+        $("#video5").hide();
+        $("#video6").hide();
+    });
+
+    $("#video3").dblclick(function(){
+        $("#video0").hide();
+        $("#video1").hide();
+        $("#video2").hide();
+        $("#video3").hide();
+        $("#video4").show();
+        $("#video5").hide();
+        $("#video6").hide();
+    });
+
+    $("#video4").dblclick(function(){
+        $("#video0").hide();
+        $("#video1").hide();
+        $("#video2").hide();
+        $("#video3").hide();
+        $("#video4").hide();
+        $("#video5").show();
+        $("#video6").hide();
+    });
+
+    $("#video5").dblclick(function(){
+        $("#video0").hide();
+        $("#video1").hide();
+        $("#video2").hide();
+        $("#video3").hide();
+        $("#video4").hide();
+        $("#video5").hide();
+        $("#video6").show();
+    });
+
+    $("#video6").dblclick(function(){
+        $("#video0").hide();
+        $("#video1").show();
+        $("#video2").hide();
+        $("#video3").hide();
+        $("#video4").hide();
+        $("#video5").hide();
+        $("#video6").hide();
+    });
 
 
 
