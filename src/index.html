@@ -37,9 +37,47 @@
             
         </div>
         <hr style="position: absolute; top: 80px; left: 2.5vw; width: 95vw; border-width:2px 0 0 0; border: color #242424; text-decoration: none; ">
+
+
+    <!-- 이채림 스크롤 버튼 만들어보자 -->
+    <div class="btn_big">
+        <img src="./img/scroll_btn_big.png">
+        <div>
+            <a href="#section s1"><img class="btn_arrow" src="./img/scroll_btn_arrow.png"></a>
+            <div class="move1">
+                <img class="btn_1"src="./img/scroll_btn_1.png">
+                <img class="btn_circle1" src="./img/scroll_btn_circle.png">   
+            </div>
+            <a href="#section s2"><img class="btn_arrow2" src="./img/scroll_btn_arrow.png"></a>
+            <a href="#section s0"><img class="btn_back_arrow2" src="./img/scroll_btn_arrow2.png"></a>
+            <div class="move2">
+                <img class="btn_2"src="./img/scroll_btn_2.png">
+                <img class="btn_circle2" src="./img/scroll_btn_circle2.png">   
+            </div>
+            <a href="#section s3"><img class="btn_arrow3" src="./img/scroll_btn_arrow.png"></a>
+            <a href="#section s1"><img class="btn_back_arrow3" src="./img/scroll_btn_arrow2.png"></a>
+            <div class="move3">
+                <img class="btn_3"src="./img/scroll_btn_3.png">
+                <img class="btn_circle3" src="./img/scroll_btn_circle2.png">   
+            </div>
+            <a href="#section s2"><img class="btn_arrow4" src="./img/scroll_btn_arrow2.png"></a>
+            <div class="move4">
+                <img class="btn_4"src="./img/scroll_btn_4.png">
+                <img class="btn_circle4" src="./img/scroll_btn_circle2.png">   
+            </div>
+            
+        </div> 
+        
+    </div>
+    <!-- 이채림 스크롤 버튼 만들어보자 -->
+
+
+
+
+
     </div>
     <div id="full-page">
-        <div class="section s0">
+        <div class="section s0" id="section s0">
 
             <div class="main_logo">
 
@@ -62,9 +100,7 @@
             </div>
 
 
-            <div class="scroll_btn">
-                <a href="#section s1"><img src="./img/scroll_btn_1.png" alt="scroll_btn_1"></a>
-            </div>
+            
 
 
         </div>
@@ -91,21 +127,18 @@
                 <video id="video6" class="video" data-autoplay="data-keepplaying" autoplay loop muted src="./img/door_close_3.mp4"></video>
             </div>
 
-            <div class="scroll_btn">
-                <a href="#section s2"><img src="./img/scroll_btn_2.png" alt="scroll_btn_2"></a>
-            </div>
+            
         </div>
 
 
 
         <!-- 섹션2 편지쓰기 -->
         <div class="section s2" id="section s2">
-            
-            <video class="test" data-autoplay="data-autoplay" autoplay loop muted src="./img/home_c4d_2.mp4"></video>
-
-            <div class="scroll_btn">
-                <a href="#section s3"><img src="./img/scroll_btn_3.png" alt="scroll_btn_3"></a>
+            <!-- <video class="test" data-autoplay="data-autoplay" autoplay loop muted src="./img/home_c4d_2.mp4"></video> -->
+            <div class="letter">
+                <div class="letter_bg"><img src="./img/letter_bg.png" alt="letter_bg"></div>
             </div>
+            
         </div>
 
 
@@ -113,11 +146,9 @@
         <!-- 편지봉투 접기 -->
         <div class="section s3" id="section s3">
 
-            <video class="test" data-autoplay="data-autoplay" autoplay muted src="./img/home_c4d_3.mp4"></video>
+            <!-- <video class="test" data-autoplay="data-autoplay" autoplay muted src="./img/home_c4d_3.mp4"></video> -->
 
-            <div class="scroll_btn">
-                <a href="#section s2"><img src="./img/scroll_btn_4.png" alt="scroll_btn_4"></a>
-            </div>
+            
         </div>
    
    
@@ -167,36 +198,7 @@
 
 
 
-    <!-- <script type="module">
-
-        import * as THREE from './js/three.module.js';
-        import { APP } from './js/app.js';
-        import { VRButton } from './js/VRButton.js';
-
-        window.THREE = THREE; // Used by APP Scripts.
-        window.VRButton = VRButton; // Used by APP Scripts.
-
-        var loader = new THREE.FileLoader();
-        loader.load( 'app.json', function ( text ) {
-
-            var player = new APP.Player();
-            player.load( JSON.parse( text ) );
-            player.setSize( window.innerWidth, window.innerHeight );
-            player.play();
-
-            document.body.appendChild( player.dom );
-
-            window.addEventListener( 'resize', function () {
-
-                player.setSize( window.innerWidth, window.innerHeight );
-
-            } );
-
-        } );
-
-
-
-    </script> -->
+   
 
     <script>
         const totalNum = 7;

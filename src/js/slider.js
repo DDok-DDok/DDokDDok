@@ -86,95 +86,6 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
-    /*웹페이지 열었을 때*/
-    $("#door_waver_1").show();
-    $("#door_open_ddok").hide();
-    $("#door_close_1").hide();
-    $("#door_open_popo").hide();
-    $("#door_close_2").hide();
-    $("#door_open_bubu").hide();
-    $("#door_close_3").hide();
-
-    /*door_waver_1 클릭했을 때 door_open_ddok를 보여줌*/
-    $("#door_waver_1").dblclick(function(){
-        $("#door_waver_1").hide();
-        $("#door_open_ddok").show();
-        $("#door_close_1").hide();
-        $("#door_open_popo").hide();
-        $("#door_close_2").hide();
-        $("#door_open_bubu").hide();
-        $("#door_close_3").hide();
-    });
-
-    /*door_open_ddok 클릭했을 때 door_close_1을 보여줌*/
-    $("#door_open_ddok").dblclick(function(){
-        $("#door_waver_1").hide();
-        $("#door_open_ddok").hide();
-        $("#door_close_1").show();
-        $("#door_open_popo").hide();
-        $("#door_close_2").hide();
-        $("#door_open_bubu").hide();
-        $("#door_close_3").hide();
-    });
-
-    /*door_close_1 클릭했을 때 door_open_popo을 보여줌*/
-    $("#door_close_1").dblclick(function(){
-        $("#door_waver_1").hide();
-        $("#door_open_ddok").hide();
-        $("#door_close_1").hide();
-        $("#door_open_popo").show();
-        $("#door_close_2").hide();
-        $("#door_open_bubu").hide();
-        $("#door_close_3").hide();
-    });
-
-
-    /*door_open_popo 클릭했을 때 door_close_2을 보여줌*/
-    $("#door_open_popo").dblclick(function(){
-        $("#door_waver_1").hide();
-        $("#door_open_ddok").hide();
-        $("#door_close_1").hide();
-        $("#door_open_popo").hide();
-        $("#door_close_2").show();
-        $("#door_open_bubu").hide();
-        $("#door_close_3").hide();
-    });
-
-    /*door_close_2 클릭했을 때 door_open_bubu을 보여줌*/
-    $("#door_close_2").dblclick(function(){
-        $("#door_waver_1").hide();
-        $("#door_open_ddok").hide();
-        $("#door_close_1").hide();
-        $("#door_open_popo").hide();
-        $("#door_close_2").hide();
-        $("#door_open_bubu").show();
-        $("#door_close_3").hide();
-    });
-
-    /*door_open_bubu 클릭했을 때 door_close_3을 보여줌*/
-    $("#door_open_bubu").dblclick(function(){
-        $("#door_waver_1").hide();
-        $("#door_open_ddok").hide();
-        $("#door_close_1").hide();
-        $("#door_open_popo").hide();
-        $("#door_close_2").hide();
-        $("#door_open_bubu").hide();
-        $("#door_close_3").show();
-    });
-
-    /*door_close_3 클릭했을 때 door_waver_1을 보여줌*/
-    $("#door_close_3").dblclick(function(){
-        $("#door_waver_1").show();
-        $("#door_open_ddok").hide();
-        $("#door_close_1").hide();
-        $("#door_open_popo").hide();
-        $("#door_close_2").hide();
-        $("#door_open_bubu").hide();
-        $("#door_close_3").hide();
-    });
-
-    let mov = document. getElementById(door_waver_1)
 
 
 
@@ -188,8 +99,6 @@ $(document).ready(function(){
 
 
 
-
-});
 
 $(document).ready(function(){
     /*웹페이지 열었을 때*/
@@ -275,3 +184,100 @@ $(document).ready(function(){
 
 
 });
+
+
+
+$(document).ready(function(){
+    /*웹페이지 열었을 때*/
+    $(".move1").show();
+    $(".move2").hide();
+    $(".move3").hide();
+    $(".move4").hide();
+    $(".btn_arrow").show();
+    $(".btn_arrow2").hide();
+    $(".btn_arrow3").hide();
+    $(".btn_arrow4").hide();
+    $(".btn_back_arrow2").hide();
+    $(".btn_back_arrow3").hide();
+
+
+    /*이채림 칭찬*/
+    $(".btn_arrow").click(function(){
+        $(".move1").hide();
+        $(".move2").show();
+        $(".move3").hide();
+        $(".move4").hide();
+        $(".btn_arrow").hide();
+        $(".btn_arrow2").show();
+        $(".btn_arrow3").hide();
+        $(".btn_arrow4").hide();
+        $(".btn_back_arrow2").show();
+        $(".btn_back_arrow3").hide();
+    });
+
+    $(".btn_arrow2").click(function(){
+        $(".move1").hide();
+        $(".move2").hide();
+        $(".move3").show();
+        $(".move4").hide();
+        $(".btn_arrow").hide();
+        $(".btn_arrow2").hide();
+        $(".btn_arrow3").show();
+        $(".btn_arrow4").hide();
+        $(".btn_back_arrow2").hide();
+        $(".btn_back_arrow3").show();
+    });
+
+    $(".btn_arrow3").click(function(){
+        $(".move1").hide();
+        $(".move2").hide();
+        $(".move3").hide();
+        $(".move4").show();
+        $(".btn_arrow").hide();
+        $(".btn_arrow2").hide();
+        $(".btn_arrow3").hide();
+        $(".btn_arrow4").show();
+        $(".btn_back_arrow2").hide();
+        $(".btn_back_arrow3").hide();
+    });
+
+    $(".btn_arrow4").click(function(){
+        $(".move1").hide();
+        $(".move2").hide();
+        $(".move3").show();
+        $(".move4").hide();
+        $(".btn_arrow").hide();
+        $(".btn_arrow2").hide();
+        $(".btn_arrow3").show();
+        $(".btn_arrow4").hide();
+        $(".btn_back_arrow2").hide();
+        $(".btn_back_arrow3").show();
+    });
+
+    $(".btn_back_arrow3").click(function(){
+        $(".move1").hide();
+        $(".move2").show();
+        $(".move3").hide();
+        $(".move4").hide();
+        $(".btn_arrow").hide();
+        $(".btn_arrow2").show();
+        $(".btn_arrow3").hide();
+        $(".btn_arrow4").hide();
+        $(".btn_back_arrow2").show();
+        $(".btn_back_arrow3").hide();
+    });
+
+    $(".btn_back_arrow2").click(function(){
+        $(".move1").show();
+        $(".move2").hide();
+        $(".move3").hide();
+        $(".move4").hide();
+        $(".btn_arrow").show();
+        $(".btn_arrow2").hide();
+        $(".btn_arrow3").hide();
+        $(".btn_arrow4").hide();
+        $(".btn_back_arrow2").hide();
+        $(".btn_back_arrow3").hide();
+    });
+});
+/*이채림 칭찬*/
