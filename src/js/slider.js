@@ -281,3 +281,58 @@ $(document).ready(function(){
     });
 });
 /*이채림 칭찬*/
+
+
+
+
+
+
+
+
+
+
+
+
+var dragBtn = $('.drag-button');
+var dragTgt = $('.drag-target');
+var laptop = $('.part.top');
+var overlap = '50%';
+
+Draggable.create(dragBtn, {
+	type: 'y',
+	bounds: '.drag-container',
+	onDrag: function(e) {
+		if( this.hitTest(dragTgt, overlap) ) {
+			$(this.target).addClass('in-range');
+		} else {
+			$(this.target).removeClass('in-range');
+		}
+    var matrix = dragBtn.css('transform').replace(/[^0-9\-.,]/g, '').split(',');
+    var matrixY = matrix[13] || matrix[5]
+    var matrixPlusY = -matrixY /6 - 90
+    // console.log(matrixPlusY);
+    if(matrixPlusY > 0) {
+      laptop.stop().css('transform', 'translate3d(0, 0, 0) rotateX(0deg)');
+    } else {
+		  laptop.stop().css('transform', 'translate3d(0, 0, 0) rotateX('+ matrixPlusY + 'deg)');
+    }
+	},
+	onDragEnd: function(e) {
+		var endPos = $(this.target).parent().height() - 52 + 'px';
+		if( $(this.target).hasClass('in-range') ) {
+			$(this.target).addClass('in-target');
+			gsap.to(this.target, {duration: 0.2, y: '-' + endPos});
+			$('#mission1').css('z-index','0');
+			$('#mission2').css({'z-index':'10', 'opacity':'1'});
+			$('#mission1 .mockup .part.top').stop().css({'transform': 'translate3d(0, 0, 0) rotateX(-90deg)'})
+			
+			$('.mission-ui-play').attr('value', '2');
+			$('.mission-ui-retry').attr('value', '2');
+
+			randomError();
+		} else {
+			gsap.to(this.target, {duration: 0.5, y: 0});
+			laptop.stop().css({'transform': 'translate3d(0, 0, 0) rotateX(-90deg)'})
+		}
+	}
+});

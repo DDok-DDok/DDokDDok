@@ -410,13 +410,138 @@ body {
 }
 
 .letter_bg{
-  width: 29vw;
+  width: 25vw;
   position: relative;
-  top: 18vh;
-  left: 13vw;
+  top: 21vh;
+  left: 35vw;
 }
 
 .letter_bg img{
   width: 100%;
   height: 100%;
 }
+
+.letter_eraser{
+  width: 8vw;
+  position: absolute;
+  top: 50vh;
+  left: 18vw;
+  animation:waving_eraser 1.5s infinite;
+}
+
+.letter_eraser img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.letter_pencil{
+  width: 12vw;
+  position: absolute;
+  top: 38vh;
+  left: 70vw;
+  animation:waving_pencil 1.5s infinite;
+}
+
+.letter_pencil img{
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes waving_eraser { 
+  0%{ transform: rotate(10deg);}
+  50%{ transform: rotate(0deg);}
+  100%{transform: rotate(10deg);}
+ }
+
+ @keyframes waving_pencil { 
+  0%{ transform: rotate(-10deg);}
+  50%{ transform: rotate(0deg);}
+  100%{transform: rotate(-10deg);}
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+.envelope_set{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.envelope_bottom{
+  position: relative;
+  width: 35vw;
+  top: 45vh;
+  left: 30vw;
+}
+
+.envelope_bottom img{
+  width: 100%;
+  
+}
+
+
+.envelope_top{
+  position:absolute;
+  width: 35vw;
+  top: 18.8vh;
+  left: 30vw;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform: rotateX(50deg);
+  perspective: 1000px;
+
+
+}
+
+.envelope_top img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+.laptop-container {display: flex; width: 100%; height: 100%; position:relative; justify-content: center;}
+    .mockup {display: inline-block; position: absolute; z-index: 0; text-align: center; font-size: 0; perspective: 2400px; perspective-origin: 50% 100%; opacity: 1; bottom: 5%; transform-origin: center 100%; transform: scale(1.1);/*transition: 500ms opacity;*/ }
+    .mockup .part .top, .mockup .part .bottom {position: absolute;top: 0;left: 0;}
+    #mission1 .mockup .part.top {transform: translate3d(0, 0, 0) rotateX(-90deg);}
+    #mission2 .mockup .part.top {transform: translate3d(0, 0, 0) rotateX(0deg);}
+    .mockup .part {display: inline-block; position: relative; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; transform-origin: 50% 100%; transition: 500ms ease-out;}
+    .mockup.opened .part .top {transform: translate3d(0, 0, -11px) rotateX(90deg) scale(1, 1);}
+    .mockup .part .top {transform-origin: 50% 0; transform: translate3d(0, 0, -11px) rotateX(90deg); transition: 500ms ease-in;}
+    
+    /* .mockup:hover .part.top {
+        transform: translate3d(0, 0, 0) rotateX(0deg);
+    }    */
+
+    .mockup img {display: block; max-width: 100%; backface-visibility: hidden;}
+    .mockup .part .cover {position: relative;}
+    .mockup .laptop-bg {display: block; position: absolute; top: 8%; left: 2%; width: 96%; border-radius: 6px; backface-visibility: hidden; transform: translate3d(0, 0, 1px);}
+    .mockup .part.bottom {position: absolute;top: 0;left: 0;transform: translate3d(0, 0, 0) rotateX(-90deg);}
+    .mockup .part .bottom {transform-origin: 50% 0; transform: translate3d(0,0,0) rotateX(90deg);}
+
+    .drag-container {position: absolute;display: flex;flex-direction: row;justify-content: space-between;align-items: center;width: 800px;height: 65vh;z-index: 6;bottom: 2.5%;left: calc(50% - 400px);opacity: 0;}
+    .drag-button {width: 100%;height: 35px;border: 1px solid #ffffff;position: absolute;bottom: 0;z-index: 999;cursor:grab;}
+    .drag-target {width: 100%;height: 35px;border: 1px solid #ffffff;border-style: dashed;position: absolute;top: 0;z-index: 999;}
+    .drag-line {display: none; position: absolute; top: 60px;left: 400px;/* width: calc(100% - 120px); height: 1px; */ width: 1px; height: calc(100% - 120px); border-left: 1px dashed #ffffff; z-index: 999;}
+    /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
