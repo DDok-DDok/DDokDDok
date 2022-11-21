@@ -187,6 +187,11 @@ $(document).ready(function(){
 
 
 
+
+
+
+// behavior: 'smooth'
+
 $(document).ready(function(){
     /*웹페이지 열었을 때*/
     $(".move1").show();

@@ -275,13 +275,13 @@ body {
 
 .btn_4{
   position: absolute;
-  top: 9.1vh;
+  top: 9.4vh;
   left: 0.6vw;
 }
 
 .btn_circle4{
   position: absolute;
-  top: 8.1vh;
+  top: 8.4vh;
 }
 /* 이채림 */
 
@@ -543,5 +543,9 @@ body {
     .drag-button {width: 100%;height: 35px;border: 1px solid #ffffff;position: absolute;bottom: 0;z-index: 999;cursor:grab;}
     .drag-target {width: 100%;height: 35px;border: 1px solid #ffffff;border-style: dashed;position: absolute;top: 0;z-index: 999;}
     .drag-line {display: none; position: absolute; top: 60px;left: 400px;/* width: calc(100% - 120px); height: 1px; */ width: 1px; height: calc(100% - 120px); border-left: 1px dashed #ffffff; z-index: 999;}
+
+
+
+
     /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
