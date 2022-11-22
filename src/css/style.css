@@ -462,9 +462,19 @@ body {
 
 
 
+ .letter_text_container{
+  width: 25vw;
+  position: absolute;
+  top: 21vh;
+  left: 35vw;
+ }
 
-
-
+.letter_text_1{
+  width: 100%;
+  height: 7vh;
+  position: relative;
+  top: 3vh;
+}
 
 
 
