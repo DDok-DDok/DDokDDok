@@ -173,8 +173,8 @@
                 <!-- <div class="envelope_bottom"><img src="./img/envelope_bottom.png" alt="envelope_bottom"></div>
                 <div class="envelope_top"><img src="./img/envelope_top.png" alt="envelope_top"></div> -->
                 <div class="envelope_click">
-                    <video class="envelope_swing" data-autoplay="data-keepplaying" src="./img/envelope_swing.mp4"></video>
-                    <video class="envelope_close" data-autoplay="data-keepplaying" src="./img/envelope_close.mp4"></video>
+                    <video class="envelope_swing" data-autoplay="data-keepplaying" autoplay loop muted src="./img/envelope_swing.mp4"></video>
+                    <video class="envelope_close" data-autoplay="data-keepplaying" autoplay src="./img/envelope_close.mp4"></video>
                     <div class='v-align'>
                         <div class='hero-btn'>
                         <button class='btn'>
@@ -343,13 +343,13 @@
 
 <style>
     body {margin: 0;}
-        #img { border: 3px solid green; position: relative; width: 508px; height: 664px; margin: 0 auto; overflow: hidden;}
+        #img { position: relative; width: 508px; height: 664px; margin: 0 auto; overflow: hidden;}
         #img .img {position: absolute; top: 40px}
       
 
-        #eraser {border: 1px solid red; width: 100px; position: absolute; top: 45vh; right: 20vw;}
-        #pencil {border: 1px solid red; width: 100px; position: absolute; top: 45vh; left: 20vw;}
-        section {border: 1px solid blue; height: 700px;}
+        #eraser { width: 100px; position: absolute; top: 45vh; right: 20vw;}
+        #pencil { width: 100px; position: absolute; top: 45vh; left: 20vw;}
+        section {height: 700px;}
         #section2 {position: relative;}
         #mouse { position: absolute; bottom: 50px; left: 0; background-color: aqua;}
         #boxXY { position: absolute; bottom: 0; left: 0; background-color: antiquewhite;}
