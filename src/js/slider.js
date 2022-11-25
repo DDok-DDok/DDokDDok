@@ -208,6 +208,7 @@ $(document).ready(function(){
 
     /*이채림 칭찬*/
     $(".btn_arrow").click(function(){
+        console
         $(".move1").hide();
         $(".move2").show();
         $(".move3").hide();
@@ -287,57 +288,93 @@ $(document).ready(function(){
 });
 /*이채림 칭찬*/
 
+$(document).ready(function(){
+    /*웹페이지 열었을 때*/
+    $(".envelope_swing").show();
+    $(".envelope_close").hide();
+    $(".v-align").hide();
 
+    /*img1을 클릭했을 때 img2를 보여줌*/
+    $(".envelope_swing").click(function(){
+        $(".envelope_swing").hide();
+        $(".envelope_close").show();
+        $(".v-align").hide();
+    });
 
+    /*img2를 클릭했을 때 img3을 보여줌*/
+    $(".envelope_close").click(function(){
+        $(".envelope_swing").hide();
+        $(".envelope_close").hide();
+        $(".v-align").show();
+    });
 
-
-
-
-
-
-
-
-
-var dragBtn = $('.drag-button');
-var dragTgt = $('.drag-target');
-var laptop = $('.part.top');
-var overlap = '50%';
-
-Draggable.create(dragBtn, {
-	type: 'y',
-	bounds: '.drag-container',
-	onDrag: function(e) {
-		if( this.hitTest(dragTgt, overlap) ) {
-			$(this.target).addClass('in-range');
-		} else {
-			$(this.target).removeClass('in-range');
-		}
-    var matrix = dragBtn.css('transform').replace(/[^0-9\-.,]/g, '').split(',');
-    var matrixY = matrix[13] || matrix[5]
-    var matrixPlusY = -matrixY /6 - 90
-    // console.log(matrixPlusY);
-    if(matrixPlusY > 0) {
-      laptop.stop().css('transform', 'translate3d(0, 0, 0) rotateX(0deg)');
-    } else {
-		  laptop.stop().css('transform', 'translate3d(0, 0, 0) rotateX('+ matrixPlusY + 'deg)');
-    }
-	},
-	onDragEnd: function(e) {
-		var endPos = $(this.target).parent().height() - 52 + 'px';
-		if( $(this.target).hasClass('in-range') ) {
-			$(this.target).addClass('in-target');
-			gsap.to(this.target, {duration: 0.2, y: '-' + endPos});
-			$('#mission1').css('z-index','0');
-			$('#mission2').css({'z-index':'10', 'opacity':'1'});
-			$('#mission1 .mockup .part.top').stop().css({'transform': 'translate3d(0, 0, 0) rotateX(-90deg)'})
-			
-			$('.mission-ui-play').attr('value', '2');
-			$('.mission-ui-retry').attr('value', '2');
-
-			randomError();
-		} else {
-			gsap.to(this.target, {duration: 0.5, y: 0});
-			laptop.stop().css({'transform': 'translate3d(0, 0, 0) rotateX(-90deg)'})
-		}
-	}
+    
 });
+
+
+$('.hero-btn').click(function(){
+    if(!$('.hero-btn').parent().hasClass('active')){
+      $(this).parent().stop().addClass('active');
+      setTimeout(function(){  
+        $('.hero-btn').parent().removeClass('active'); 
+      }, 1000);
+    }
+  });
+
+
+
+
+
+
+
+// var dragBtn = $('.drag-button');
+// var dragTgt = $('.drag-target');
+// var laptop = $('.part.top');
+// var overlap = '50%';
+
+// Draggable.create(dragBtn, {
+// 	type: 'y',
+// 	bounds: '.drag-container',
+// 	onDrag: function(e) {
+// 		if( this.hitTest(dragTgt, overlap) ) {
+// 			$(this.target).addClass('in-range');
+// 		} else {
+// 			$(this.target).removeClass('in-range');
+// 		}
+//     var matrix = dragBtn.css('transform').replace(/[^0-9\-.,]/g, '').split(',');
+//     var matrixY = matrix[13] || matrix[5]
+//     var matrixPlusY = -matrixY /6 - 90
+//     // console.log(matrixPlusY);
+//     if(matrixPlusY > 0) {
+//       laptop.stop().css('transform', 'translate3d(0, 0, 0) rotateX(0deg)');
+//     } else {
+// 		  laptop.stop().css('transform', 'translate3d(0, 0, 0) rotateX('+ matrixPlusY + 'deg)');
+//     }
+// 	},
+// 	onDragEnd: function(e) {
+// 		var endPos = $(this.target).parent().height() - 52 + 'px';
+// 		if( $(this.target).hasClass('in-range') ) {
+// 			$(this.target).addClass('in-target');
+// 			gsap.to(this.target, {duration: 0.2, y: '-' + endPos});
+// 			$('#mission1').css('z-index','0');
+// 			$('#mission2').css({'z-index':'10', 'opacity':'1'});
+// 			$('#mission1 .mockup .part.top').stop().css({'transform': 'translate3d(0, 0, 0) rotateX(-90deg)'})
+			
+// 			$('.mission-ui-play').attr('value', '2');
+// 			$('.mission-ui-retry').attr('value', '2');
+
+// 			randomError();
+// 		} else {
+// 			gsap.to(this.target, {duration: 0.5, y: 0});
+// 			laptop.stop().css({'transform': 'translate3d(0, 0, 0) rotateX(-90deg)'})
+// 		}
+// 	}
+// });
+
+
+
+
+
+
+
+
