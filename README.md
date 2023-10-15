@@ -6,7 +6,7 @@
 
 4명의 디자이너와 1명의 개발자로 이루어진 팀 'no:name'
 `<br><br>``<br>`PROJECT URL LINK : `<br>`
-[https://ddok-ddok.github.io/DDokDDok/src/index.html]()
+[https://ddok-ddok.github.io/DDokDDok/src/index.html](https://ddok-ddok.github.io/DDokDDok/src/index.html)
 
 `<br><br>``<br><br>`
 ‘똑똑’은 상대방과 화해를 하기위해서 상대방의 마음을 두드리는 소리를 의미하며, ‘똑’을 :DDok 하면 웃는 두 상대의 모습을 상기 시킨다.`<br>`
